@@ -13,8 +13,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - bw-cli
         baseImage:
           - debian:latest
           - ubuntu:latest
