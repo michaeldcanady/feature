@@ -1,0 +1,30 @@
+{
+  "id": "bw-cli",
+  "name": "Bitwarden Password Manager CLI",
+  "version": "0.1.0",
+  "description": "",
+  "options": {
+    "version": {
+      "type": "string",
+      "enum": [
+        "latest",
+        "2024.8.1"
+      ],
+      "default": "latest",
+      "description": "Select or enter a Bitwarden CLI version."
+    },
+    "os": {
+      "type": "string",
+      "enum": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "default": "linux",
+      "description": "Select or enter an operating system name."
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils"
+  ]
+}

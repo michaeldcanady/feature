@@ -1,0 +1,28 @@
+{
+    "version_latest_os_linux": {
+        "image": "mcr.microsoft.com/devcontainers/base:focal",
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils:1": {
+                "installZsh": false,
+                "installOhMyZsh": false,
+                "upgradePackages": false,
+                "username": "octocat"
+            },
+            "bw-cli": {
+                "version": "latest",
+                "os": "linux"
+            }
+        },
+        "remoteUser": "octocat"
+    },
+    "version_specific_os_linux": {
+        "image": "mcr.microsoft.com/devcontainers/base:focal",
+        "features": {
+            "bw-cli": {
+                "version": "2024.8.1",
+                "os": "linux"
+            }
+        },
+        "remoteUser": "octocat"
+    }
+}
